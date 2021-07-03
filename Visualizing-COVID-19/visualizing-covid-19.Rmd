@@ -1,5 +1,6 @@
 ---
-title: "Visualizing COVID-19 - Datacamp Project"
+title: "Visualizing COVID-19"
+subtitle: "Datacamp Project Solution"
 date: "`r format(Sys.time(), '%d %b, %Y')`"
 output: 
   prettydoc::html_pretty:
