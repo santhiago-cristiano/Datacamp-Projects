@@ -15,6 +15,9 @@ output:
     toc_float:
       collapsed: yes
       smooth_scroll: no
+  pdf_document:
+    number_sections: yes
+    # keep_tex: yes
 ---
 
 ```{r setup, include=FALSE}
@@ -23,7 +26,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # From epidemic to pandemic
 
-![](https://www.nps.gov/aboutus/news/images/CDC-coronavirus-image-23311-for-web.jpg?maxwidth=650&autorotate=false){width=50%} 
+![](https://www.nps.gov/aboutus/news/images/CDC-coronavirus-image-23311-for-web.jpg?maxwidth=650&autorotate=false){width=50%}
 
 In December 2019, COVID-19 coronavirus was first identified in the Wuhan region of China. By March 11, 2020, the World Health Organization (WHO) categorized the COVID-19 outbreak as a pandemic. A lot has happened in the months in between with major outbreaks in Iran, South Korea, and Italy.
 
@@ -42,7 +45,7 @@ library(ggplot2)
 library(dplyr)
 ```
 
-```{r}
+```{r, message=FALSE}
 # Read datasets/confirmed_cases_worldwide.csv into confirmed_cases_worldwide
 confirmed_cases_worldwide <- read_csv("datasets/confirmed_cases_worldwide.csv")
 
@@ -71,7 +74,7 @@ Early on in the outbreak, the COVID-19 cases were primarily centered in China. L
 
 *We'll build on this plot in future tasks. One thing that will be important for the following tasks is that you add aesthetics within the line geometry of your ggplot, rather than making them global aesthetics.*
 
-```{r}
+```{r message=FALSE}
 # Read in datasets/confirmed_cases_china_vs_world.csv
 confirmed_cases_china_vs_world <- 
   read_csv("datasets/confirmed_cases_china_vs_world.csv")
@@ -175,7 +178,7 @@ With the logarithmic scale, we get a much closer fit to the data. From a data sc
 
 Not all countries are being affected by COVID-19 equally, and it would be helpful to know where in the world the problems are greatest. Let's find the countries outside of China with the most confirmed cases in our dataset.
 
-```{r}
+```{r, message=FALSE}
 # Run this to get the data for each country
 confirmed_cases_by_country <-
   read_csv("datasets/confirmed_cases_by_country.csv")
@@ -198,7 +201,7 @@ Even though the outbreak was first identified in China, there is only one countr
 
 Finally, congratulations on getting to the last step! If you would like to continue making visualizations or find the hardest hit countries as of today, you can do your own analyses with the latest data available [here](https://github.com/RamiKrispin/coronavirus).
 
-```{r}
+```{r, message=FALSE}
 # Read in the dataset from datasets/confirmed_cases_top7_outside_china.csv
 confirmed_cases_top7_outside_china <-
   read_csv("datasets/confirmed_cases_top7_outside_china.csv")
