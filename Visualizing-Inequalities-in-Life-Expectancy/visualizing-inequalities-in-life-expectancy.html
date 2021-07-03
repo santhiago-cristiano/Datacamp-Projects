@@ -187,7 +187,7 @@ a.sourceLine {
 <div id="visualize-i" class="section level1" number="3">
 <h1 number="3"><span class="header-section-number">3</span> Visualize I</h1>
 <p>A scatter plot is a useful way to visualize the relationship between two variables. It is a simple plot in which points are arranged on two axes, each of which represents one of those variables.</p>
-<p>Let’s create a scatter plot using ggplot2 to represent life expectancy of males (on the x-axis) against females (on the y-axis). We will create a straightforward plot in this task, without many details. We will take care of these kinds of things shortly.</p>
+<p>Let’s create a scatter plot using <code>ggplot2</code> to represent life expectancy of males (on the x-axis) against females (on the y-axis). We will create a straightforward plot in this task, without many details. We will take care of these kinds of things shortly.</p>
 <div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Plotting male and female life expectancy</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(subdata) <span class="sc">+</span></span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">aes</span>(<span class="at">x =</span> Male, <span class="at">y =</span> Female) <span class="sc">+</span></span>
@@ -196,7 +196,7 @@ a.sourceLine {
 </div>
 <div id="reference-lines-i" class="section level1" number="4">
 <h1 number="4"><span class="header-section-number">4</span> Reference lines I</h1>
-<p>A good plot must be easy to understand. There are many tools in ggplot2 to achieve this goal and we will explore some of them now. Starting from the previous plot, let’s set the same limits for both axes as well as place a diagonal line for reference. After doing this, the difference between men and women across countries will be easier to interpret.</p>
+<p>A good plot must be easy to understand. There are many tools in <code>ggplot2</code> to achieve this goal and we will explore some of them now. Starting from the previous plot, let’s set the same limits for both axes as well as place a diagonal line for reference. After doing this, the difference between men and women across countries will be easier to interpret.</p>
 <p>After completing this task, we will see how most of the points are arranged above the diagonal and how there is a significant dispersion among them. What does this all mean?</p>
 <div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Adding an abline and changing the scale of axes of the previous plots</span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -287,7 +287,7 @@ a.sourceLine {
 <div id="how-has-life-expectancy-by-gender-evolved" class="section level1" number="7">
 <h1 number="7"><span class="header-section-number">7</span> How has life expectancy by gender evolved?</h1>
 <p>Since our data contains historical information, let’s see now how life expectancy has evolved in recent years. Our second plot will represent the difference between men and women across countries between two periods: 2000-2005 and 1985-1990.</p>
-<p>Let’s start building a dataset called subdata2 for our second plot.</p>
+<p>Let’s start building a dataset called <code>subdata2</code> for our second plot.</p>
 <div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Subsetting, mutating and reshaping the life expectancy data</span></span>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>subdata2 <span class="ot">&lt;-</span> life_expectancy <span class="sc">%&gt;%</span> </span>
 <span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(Year <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">&quot;1985-1990&quot;</span>, <span class="st">&quot;2000-2005&quot;</span>)) <span class="sc">%&gt;%</span> </span>
