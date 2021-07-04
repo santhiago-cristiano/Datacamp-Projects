@@ -13,3 +13,7 @@ Visualize the rise of COVID-19 cases globally with ggplot2. See project in the D
 - [Visualizing Inequalities in Life Expectancy](https://github.com/santhiago-cristiano/Datacamp-Projects-Solutions-with-R/tree/main/Visualizing-Inequalities-in-Life-Expectancy)
 
 Compare life expectancy across countries and genders with ggplot2. See project in the Datacamp [here](https://learn.datacamp.com/projects/166)
+
+- [Exploring the Kaggle Data Science Survey](https://github.com/santhiago-cristiano/Datacamp-Projects-Solutions-with-R/tree/main/Exploring-the-Kaggle-Data-Science-Survey)
+
+Discover the top tools Kaggle participants use for data science and machine learning. See project in the Datacamp [here](https://learn.datacamp.com/projects/74)
