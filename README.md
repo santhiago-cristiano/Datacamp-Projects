@@ -21,7 +21,7 @@ Discover the top tools Kaggle participants use for data science and machine lear
 ## 📁 Files Description
 
 |       File      	  |                     Description                    	|
-|:------------------:	|:--------------------------------------------------:	|
+|:-------------------	|:---------------------------------------------------	|
 | `datasets/`       	| Folder containing the datasets used in the project 	|
 | `name-file.Rmd`   	| My solution code in R Markdown file                	|
 | `name-file.ipynb` 	| My solution code in Jupyter Notebook file          	|
