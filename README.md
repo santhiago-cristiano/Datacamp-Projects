@@ -17,3 +17,13 @@ Compare life expectancy across countries and genders with ggplot2. See project i
 - [Exploring the Kaggle Data Science Survey](https://github.com/santhiago-cristiano/Datacamp-Projects-Solutions-with-R/tree/main/Exploring-the-Kaggle-Data-Science-Survey)
 
 Discover the top tools Kaggle participants use for data science and machine learning. See project in the Datacamp [here](https://learn.datacamp.com/projects/74)
+
+## 📁 Files Description
+
+|       File      	  |                     Description                    	|
+|:------------------:	|:--------------------------------------------------:	|
+| `datasets/`       	| Folder containing the datasets used in the project 	|
+| `name-file.Rmd`   	| My solution code in R Markdown file                	|
+| `name-file.ipynb` 	| My solution code in Jupyter Notebook file          	|
+| `name-file.html`  	| HTML output from R Markdown                        	|
+| `name-file.pdf`   	| PDF output from R Markdown                         	|
