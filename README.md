@@ -21,12 +21,3 @@ My solutions to [Datacamp](https://learn.datacamp.com/) R projects
 - [Data Science for Social Good: Crime Study](https://github.com/santhiago-cristiano/Datacamp-Projects-Solutions-with-R/tree/main/Data-Science-for-Social-Good-Crime-Study)
 
   Use data science to catch criminals, plus find new ways to volunteer personal time for social good. See project in the Datacamp [here](https://learn.datacamp.com/projects/614).
-
-## 📁 Files Description
-
-|       File      	  |                     Description                    	|
-|:-------------------	|:---------------------------------------------------	|
-| `datasets/`       	| Folder containing the datasets used in the project 	|
-| `name-file.Rmd`   	| My solution code in R Markdown file                	|
-| `name-file.ipynb` 	| My solution code in Jupyter Notebook file          	|
-| `name-file.html`  	| HTML output from R Markdown                        	|
